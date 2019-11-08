@@ -12,7 +12,7 @@ def keygen(size):
     sk = number.getRandomRange(1, (N - 1))
     return sk, N, M
 
-def pociag_demo(size):
+def level8_demo(size):
     print "Generating Alice and Bob's keys"
     skA, nA, MA = keygen(size)
     skB, nB, MB = keygen(size)
@@ -69,4 +69,4 @@ def pociag_demo(size):
     p8B = pow(p7, EkB, p6B)
     print p8, p8B
 
-pociag_demo(16)
+level8_demo(16)
